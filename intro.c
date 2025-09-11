@@ -1,15 +1,15 @@
 #include <stdio.h>
 int main() {
 	char name[68];
-	int favoritenumber = 68;
+	int favoritenumber;
 printf("Hi, what's ur name?\n");
-scanf("%s, name");
-fflush(stdout);
+scanf("%30s", name);
+
 printf("That's cool, %s \nWhat about a favorite number?\n", name); 
-scanf("%d", favoritenumber);
-fflush(stdout);
-favoritenumber = favoritenumber *2;
-printf("Your number is tuff, but doubled is even tuffer, which is %d" , favoritenumber);
+scanf("%30d", &favoritenumber);
+
+
+printf("Your number is tuff, but doubled is even tuffer, which is %d" , favoritenumber * 2);
 return 0;
 
 }
